@@ -14,7 +14,56 @@
   #CUSTOM PROPERTY
 \*-----------------------------------*/
 
+:root{
 
+  /* Colors */
+  --sefety-orange_10: hsla(24, 100%, 50%, 0.1);
+  --sefety-orange: hsl(24, 100%, 50%);
+  --sonic-silver: hsl(220, 1%, 48%);
+  --gunmetal_10: hsla(217, 21%, 16%, 0.1);
+  --davys-gray: hsl(220, 2%, 31%);
+  --light-gray: hsl(0, 0%, 80%);
+  --gunmetal: hsl(217, 21%, 16%);
+  --cultured: hsl(0, 0%, 95%);
+  --black_40: hsla(0, 0%, 0%, 0.4);
+  --black_25: hsla(0, 0%, 0%, 0.25);
+  --black_15: hsla(0, 0%, 0%, 0.15);
+  --white: hsl(0, 0%, 100%);
+  --snow: hsl(345, 20%, 96%);
+
+  /* Typography */
+  --ff-jost: 'Jost', sans-serif;
+
+  --fs-1: 3.8rem;
+  --fs-2: 2.2rem;
+  --fs-3: 2rem;
+  --fs-4: 1.8rem;
+  --fs-5: 1.4rem;
+
+  --fw-600: 600;
+  --fw-500: 500;
+
+  /* Spacing */
+  --section-padding: 80px;
+
+  /* Shadow */
+  --shadow-1: 0px 2px 15px hsla(0, 0%, 0%, 0.05);
+  --shadow-2: -10px 10px 40px -2px hsla(217, 21%, 16%, 0.05);
+
+  /* Border Radius */
+  --radius-pill: 500px;
+  --radius-circle: 50%;
+  --radius-4: 4px;
+
+
+  /* Transition */
+  --transition-1: 0.25s ease;
+  --transition-2: 0.5s ease;
+  --cubic-in: cubic-bezier(0.51, 0.03, 0.64, 0.28);
+  --cubic-out: cubic-bezier(0.33, 0.85, 0.4, 0.96);
+
+
+}
 
 
 
@@ -22,7 +71,71 @@
   #RESET
 \*-----------------------------------*/
 
+*,
+*::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+li {
+  list-style: none;
+}
+
+a,
+img,
+span,
+button,
+ion-icon {
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  height: auto;
+}
+
+button {
+  background: none;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+}
+
+ion-icon {
+  pointer-events: none;
+}
+
+html {
+  font-family: var(--ff-jost);
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--white);
+  color: var(--davys-gray);
+  font-size: 1.6rem;
+  line-height: 1.7; 
+}
+
+body.active {
+  overflow: hidden;
+}
+
+:focus-visible{
+  outline-offset: 4px;
+}
+
+::webkit::-webkit-scrollbar{width: 10px;}
+::-webkit-scrollbar-track{ background-color: hsl(0, 0%, 98%); }
+::-webkit-scrollbar-thumb {background-color: hsl(0, 0%, 80%); }
+::-webkit-scrollbar-thumb:hover { background-color: hsl(0, 0%, 70%); }
 
 
 

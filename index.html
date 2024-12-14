@@ -7,13 +7,62 @@
     <meta name="title" content="vishu Christmas gift - Therapy service website">
     <meta name="decription" content="This is a website to display all of your services">
     <link rel="stylesheet icon" href="./favicon.ico" type="image/svg+xml">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- Custom Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 </head>
 <body>
 
-<!-- Primariy meta tags -->
-    <h1>Starting Point</h1>
-    
+<!-- Header -->
+    <header class="header" data-header>
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="./assets/images/logo.svg" width="209" height="52"  alt="Vishu Logo">
+            </a>
+
+            <nav class="navbar" data-navbar>
+                <p class="navbar-title">Main Menu</p>
+                <ul class="navbar-title">
+                    <li class="navbar-item">
+                        <a href="#home" class="navbar-link" data-nav-link>Home</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#about" class="navbar-link" data-nav-link>About</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#service" class="navbar-link" data-nav-link>Service</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#blog" class="navbar-link" data-nav-link>Blog</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#contact" class="navbar-link" data-nav-link>Contact Us</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+                <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+            </button>
+
+            <a href="" class="btn-primary">Contact Us</a>
+
+            <div class="overlay" data-nav-toggler data-overlay></div>
+
+        </div>
+    </header>
+
+
+
+    <!-- Javacript -->
+     <script src="./assets/js/script.js" defer></script>
+
+     <!-- Custom Icons -->
+     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
